@@ -1,0 +1,48 @@
+.btn{
+    padding: .8em 2.2em;
+    color: $white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all .2s ease-in;
+    border-radius: 50px;
+
+    &--primary{
+        background-color: $primary;
+        border: solid 1px $primary;
+    }
+
+    &--secondary{
+        border: solid 1px $white;
+    }
+
+    &--dark{
+        background-color: $black;
+        border: solid 1px $black;
+        // &:hover&:after{
+            
+        // }
+    }
+
+    
+
+    
+}
+.btn.basket{
+    
+
+
+    // position: relative;
+    // &:after{
+    //     position: absolute;
+    //     content: "ss";
+    //     background-image: url('/images/basket-light.svg');
+    //     background-repeat: no-repeat;
+    //     background-size: .6rem;
+    //     width: 1em;
+    //     height: 1em;
+    //     right: 0;
+
+    // }
+}

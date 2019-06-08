@@ -1,0 +1,186 @@
+@import "css/breakpoints";
+@import "css/mixins";
+@import "css/color";
+@import "css/type";
+@import "css/spacing";
+@import "css/btn";
+@import "css/keyframes";
+
+$min_width: 320px;
+$max_width: 1080px;
+$min_font: 7px;
+$max_font: 10px;
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+.page-leave-active {
+  
+  // opacity: 1;
+  // transition: opacity .3s ease;
+
+  .page-overlay{
+      animation: pageOverlayAni .4s cubic-bezier(1,0,1,1) forwards;
+  }
+
+}
+
+.page-leave-to {
+  // opacity: 0;
+  transition-delay: .6s;
+}
+
+.page-overlay{
+  position: fixed;
+  width: 100%;
+  height: 0px;
+  background-color: $primary-dark;
+  z-index: 98;
+}
+
+
+
+$gutter: 3rem;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection{
+    background-color: $primary;
+    color: $white;
+}
+
+
+html{
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  line-height: 1.5;
+  font-family: $base-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: $primary;
+
+  > div{
+    overflow-x: hidden;
+  }
+  
+}
+
+main{
+  animation: FadeIn .3s ease-in;
+  background-color: $white;
+  height: 100%;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.layout{
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1080px;
+    max-width: 90%;
+
+    &--left{
+        margin-left: 0;
+        padding-right: var(--container-padding);
+    }
+
+    &--right{
+        margin-right: 0;
+        padding-left: var(--container-padding);
+    }
+
+    &--960{
+        width: 960px;
+    }
+
+}
+
+.t-align{
+
+  &--center{
+    text-align: center;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: primary;
+}
+
+.opc{
+
+  &-7{
+    opacity: .7;
+  }
+  &-5{
+    opacity: .5;
+  }
+}
+
+.section-heading{
+  text-align: center;
+
+  .title{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:after{
+      content: "";
+      width: 5rem;
+      height: 3px;
+      background-color: $dark-gray-light;
+      position: absolute;
+      left: 50%;
+      bottom: -1.5rem;
+      transform: translate(-50%);
+    }
+  } 
+}

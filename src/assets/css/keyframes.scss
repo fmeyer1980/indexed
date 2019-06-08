@@ -1,0 +1,108 @@
+
+
+@keyframes FadeFromLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(-5rem, 0, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeFromRight{
+    from{
+        opacity: 0;
+        transform: translate3d(5rem, 0, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeInUp{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 2rem, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeInDown{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -2rem, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes pageOverlayAni {
+    0% {
+        height: 0;
+        background-color: $primary-dark;
+    }
+
+    50%{
+        background-color: $primary-dark;
+    }
+
+    100%{
+        height: 100vh;
+        z-index: 98;
+        background-color: $primary;
+    }
+}
+
+@keyframes heroHeadingAni{
+
+    0%, 40%{
+        color: transparent; 
+    }
+  
+    50%, 100%{
+        color: inherit;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+
+    0% {
+        transform: translateX(101%);
+        animation-timing-function: cubic-bezier(1,0,1,1);
+        background-color: $primary-dark;
+    }
+  
+    30% {
+        transform: translateX(0);
+        
+    }
+
+    60% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(1,0,1,1);
+    }
+  
+    100% {
+        transform: translateX(-101%);
+        background-color: $primary-dark;
+        
+    }
+  
+}
