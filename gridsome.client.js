@@ -4,6 +4,10 @@ import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faTwitter, faGithubSquare, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight, faAd, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+// import DefaultLayout from '~/layouts/Default.vue'
+// import VueScrollReveal from 'vue-scroll-reveal'
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 config.autoAddCss = false;
 library.add(faGithub, faTwitter, faGithubSquare, faFacebook, faArrowRight, faAd, faAngleDown)

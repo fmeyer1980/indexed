@@ -22,6 +22,9 @@ module.exports = {
           // remark options
         }
       }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`
     }
   ],
   transformers: {
@@ -38,6 +41,7 @@ module.exports = {
   css: {
     split: true
   }
+  
 }
 
 
