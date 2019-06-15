@@ -6,6 +6,9 @@
 @import "css/btn";
 @import "css/keyframes";
 
+$header-height: 10rem;
+
+
 $min_width: 320px;
 $max_width: 1080px;
 $min_font: 7px;
@@ -88,7 +91,7 @@ html{
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
+  min-height: 100vh;
 }
 
 body{
@@ -100,17 +103,22 @@ body{
   font-size: 1.6rem;
   font-weight: 400;
   background-color: $primary;
+  min-height: 100vh;
 
   > div{
-    overflow-x: hidden;
+    min-height: 100vh;
   }
   
 }
 
+
+
 main{
   animation: FadeIn .3s ease-in;
   background-color: $white;
-  height: 100%;
+  min-height: 100%;
+  // animation-delay: .5s;
+  // animation-fill-mode: backwards;
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -118,7 +126,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 
 .layout{
-  overflow: hidden;
   height: 100vh;
 }
 

@@ -11,7 +11,7 @@ library.add(faGithub, faTwitter, faGithubSquare, faFacebook, faArrowRight, faAd,
 export default function (Vue, options, context) {
   Vue.component('the-header', TheHeader)
   Vue.component('font-awesome', FontAwesomeIcon)
-
+  
   context.appOptions.render = h => {
     return h('div', {}, [
       h('the-header'),

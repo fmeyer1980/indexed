@@ -1,12 +1,10 @@
 <template>
   <Layout>
-    <SiteTitle heading="Et udpluk af vores kunder" text="Gennem årene har vi løst et hav af forskellige udfordringer i samarbejde med vores kunder, der har skabt mærkbare resultater"/>
-    <main>
+    <SiteTitle heading="Side overskrift" text="Underside tekst"/>
       <div class="container">
-        <h1>Cases</h1>
+        <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
       </div>
-      </main>
   </Layout>
 </template>
 
@@ -18,7 +16,7 @@ export default {
     SiteTitle
   },
   metaInfo: {
-    title: 'Cases'
+    title: 'About me'
   }
 }
 </script>

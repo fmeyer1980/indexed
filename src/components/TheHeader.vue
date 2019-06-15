@@ -12,13 +12,21 @@
             <li>
               <g-link to="/cases">
                 <span class="text" data-hover="Cases">Cases</span>
+                
               </g-link>
               </li>
             <li>
               <g-link to="/ydelser">
                 <span class="text" data-hover="Ydelser">Ydelser</span>
                 <font-awesome class="icon" :icon="['fas', 'angle-down']"/>
+                <!-- <ul>
+                  <li>
+                    <g-link to="/">API udvikling og integration</g-link>
+                  </li>
+                  
+                </ul> -->
               </g-link>
+              
               </li>
             <li>
               <g-link to="/om-os">
@@ -26,31 +34,15 @@
                 <font-awesome class="icon" :icon="['fas', 'angle-down']"/>
               </g-link>
               </li>
+
+
+
           </ul>
         </nav>
       </div>
   </header>
 </template>
 
-
-<static-query>
-query MainNav {
-  allWordPressPage {
-    edges{
-      node {
-        id
-        title
-        slug
-        acf{
-          mainMenu
-          topMenu
-          footerMenu
-        }
-      }
-    }
-  }
-}
-</static-query>
 
 
 <script>
@@ -64,13 +56,14 @@ export default {
 <style lang="scss">
 
 .header{
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  height: 10rem;
+  height: $header-height;
   color: $white;
+  border-bottom: solid 1px rgba($black, .05);
 
   &-wrapper{
     @include container;
@@ -96,15 +89,16 @@ export default {
         @include list-style-none;
         display: flex;
 
-        li{
+        > li{
           padding: 0 2rem;
-          
+          position: relative;
+          $link-height: 3.4rem;
 
-          a{
+          > a{
             background-color: transparent;
             color: inherit;
-            height: 3.4rem;
-            line-height: 3.4rem;
+            height: $link-height;
+            line-height: $link-height;
             overflow: hidden;
             font-size: 1.6rem;
             padding: 0;
@@ -123,9 +117,13 @@ export default {
               .text{
                 margin-top: -6.8rem;
               }
+
+              ul{
+                display: block;
+              }
             }
 
-            .text{
+            > .text{
               display: block;
               margin-top: 0px;
               position: relative;
@@ -152,8 +150,24 @@ export default {
             }
           }
 
-          .active{
+          .active--exact{
             color: $black;
+            &:after{
+                  content: "";
+                  background-color: currentColor;
+                  position: absolute;
+                  width: 60%;
+                  height: 3px;
+                  left: 0;
+                  bottom: 0;
+              }
+          }
+
+          ul{
+            @include list-style-none;
+            position: absolute;
+            display: none;
+            top: 1rem;
           }
         }
       }

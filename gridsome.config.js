@@ -14,20 +14,21 @@ module.exports = {
   siteDescription: 'A WordPress starter for Gridsome',
   plugins: [
     {
-      use: '@gridsome/source-wordpress',
+      use: '@gridsome/source-filesystem',
       options: {
-        baseUrl: 'http://localhost:8888/wp-gridsome/', // required
-        typeName: 'WordPress', // GraphQL schema name (Optional)
-        perPage: 100, // How many posts to load from server per request (Optional)
-        concurrent: 10, // How many requests to run simultaneously (Optional)
-        routes: {
-          post: '/:year/:month/:day/:slug', //adds route for "post" post type (Optional)
-          post_tag: '/tag/:slug', // adds route for "post_tag" post type (Optional)
-          page: ':slug'
+        path: 'src/pages/**/*.md',
+        typeName: 'Pages',
+        remark: {
+          // remark options
         }
       }
     }
   ],
+  transformers: {
+    remark: {
+      // global remark options
+    }
+  },
   chainWebpack: config => {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal'];
     types.forEach(type =>
