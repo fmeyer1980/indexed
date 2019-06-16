@@ -6,22 +6,11 @@ media_folder: "static/uploads"
 public_folder: uploads
 
 collections:
-- label: "Pages"
-  name: "pages"
-  files:
-    - label: "Forside"
-      name: "index"
-      file: "src/pages/index.md"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-        - {label: "Body", name: "body", widget: "markdown"}
-        - {label: Intro, name: intro, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}]}
-    - file: "src/pages/about/index.md"
-      label: "About"
-      name: "about"
-      fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Body", name: "body", widget: "markdown"}
-        
+- label: "Forside"
+  name: "forside"
+  file: "src/pages/index.md"
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Intro, name: intro, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}]}
