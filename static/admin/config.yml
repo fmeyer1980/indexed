@@ -26,8 +26,8 @@ collections:
         - label: Logos
           name: logos
           widget: list
-            fields:
-              - {label: Image, name: image, widget: image}
-              - {label: Image, name: image, widget: image}
-              - {label: Image, name: image, widget: image}
-              - {label: Image, name: image, widget: image}
+          fields:
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
