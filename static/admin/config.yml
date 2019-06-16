@@ -42,7 +42,7 @@ collections:
   name: "ydelserundersider"
   folder: "src/pages/ydelser"
   create: true
-  slug: "ydelser/{{slug}}"
+  slug: "{{slug}}"
   fields:
     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "Post"}
     - {label: "Title", name: "title", widget: "string"}
