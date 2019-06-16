@@ -1,5 +1,5 @@
 ---
-templateKey: 'PageIndex'
+templateKey: 'default'
 path: /about
 title: About our values
 ---
