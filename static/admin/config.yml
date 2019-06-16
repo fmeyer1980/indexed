@@ -31,3 +31,9 @@ collections:
             - {label: Image, name: image, widget: image}
             - {label: Image, name: image, widget: image}
             - {label: Image, name: image, widget: image}
+    - label: "About"
+        name: "about"
+        file: "src/pages/about.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
