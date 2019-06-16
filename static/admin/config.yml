@@ -10,28 +10,24 @@ collections:
   name: "pages"
   files:
     - label: "Forside"
-      name: "forside"
-      file: "site/content/forside.yml"
+      name: "index"
+      file: "src/pages/index.md"
       fields:
         - {label: Title, name: title, widget: string}
-        - {label: Intro, name: intro, widget: markdown}
-        - label: Team
-          name: team
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
+        - label: Hero
+          name: hero
           widget: list
           fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Position, name: position, widget: string}
-            - {label: Photo, name: photo, widget: image}
-    - label: "About"
-      name: "about"
-      file: "site/content/about.yml"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Intro, name: intro, widget: markdown}
-        - label: Team
-          name: team
+            - {label: Heading 1, name: heading_1, widget: string}
+            - {label: Heading 2, name: heading_2, widget: string}
+            - {label: Tekst, name: text, widget: string}
+            - {label: Image, name: image, widget: image}
+        - label: Logos
+          name: logos
           widget: list
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Position, name: position, widget: string}
-            - {label: Photo, name: photo, widget: image}
+            fields:
+              - {label: Image, name: image, widget: image}
+              - {label: Image, name: image, widget: image}
+              - {label: Image, name: image, widget: image}
+              - {label: Image, name: image, widget: image}
