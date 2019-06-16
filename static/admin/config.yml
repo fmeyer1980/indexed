@@ -17,26 +17,22 @@ collections:
       file: "src/pages/index.md"
       fields:
         - {label: Title, name: title, widget: string}
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-        - {label: "Body", name: "body", widget: "markdown"}
-        - {label: Hero, name: hero, widget: object, fields: [
-          {label: Heading 1, name: heading_1, widget: string},
-          {label: Heading 2, name: heading_2, widget: string},
-          {label: Text, name: text, widget: string}
-          ]}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page-index"}
+        - {label: Hero, name: hero, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}, {label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}]}
+        - {lable: Logos, name: logos, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}]}
     - file: "src/pages/about/index.md"
       label: "About"
       name: "about"
       fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-        - {label: "Title", name: "title", widget: "string"}
+        - {label: Title, name: title, widget: string}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
         - {label: "Body", name: "body", widget: "markdown"}
     - label: "Ydelser"
       name: "ydelser"
       file: "src/pages/ydelser/index.md"
       fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-        - {label: "Title", name: "title", widget: "string"}
+        - {label: Title, name: title, widget: string}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
         - {label: "Body", name: "body", widget: "markdown"}
 - label: "Ydelser Undersider"
   name: "ydelserundersider"
@@ -44,11 +40,6 @@ collections:
   create: true
   slug: "{{slug}}"
   fields:
-    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "Post"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Publish Date", name: "date", widget: "datetime"}
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-    - {label: "Featured Image", name: "featuredimage", widget: image}
+    - {label: Title, name: title, widget: string}
+    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
     - {label: "Body", name: "body", widget: "markdown"}
-    - {label: "Tags", name: "tags", widget: "list"}
