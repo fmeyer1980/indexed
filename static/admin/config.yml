@@ -9,8 +9,8 @@ collections:
 - label: "Forside"
   name: "forside"
   file: "src/pages/index.md"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: Intro, name: intro, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}]}
+  fields:
+    - {label: Title, name: title, widget: string}
+    - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: Intro, name: intro, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}]}
