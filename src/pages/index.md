@@ -2,7 +2,7 @@
 title: Forside
 templateKey: PageIndex
 hero:
-  heading_1: Digitale løsninger dere
+  heading_1: Digitale løsninger deret
   heading_2: skaber resultater
   text: >-
     Webbureau Indexed hjælper med digitialisering af din virksomhed.
