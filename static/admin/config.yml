@@ -6,9 +6,31 @@ media_folder: "static/uploads"
 public_folder: uploads
 
 collections:
-- name: "pages"
-  label: "Pages"
+- label: "Pages"
+  name: "pages"
   files:
+    - label: "Forside"
+      name: "index"
+      file: "src/pages/index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
+        - label: Hero
+          name: hero
+          widget: list
+          fields:
+            - {label: Heading 1, name: heading_1, widget: string}
+            - {label: Heading 2, name: heading_2, widget: string}
+            - {label: Tekst, name: text, widget: string}
+            - {label: Image, name: image, widget: image}
+        - label: Logos
+          name: logos
+          widget: list
+          fields:
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
     - file: "src/pages/about/index.md"
       label: "About"
       name: "about"
@@ -16,3 +38,4 @@ collections:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "PageIndex"}
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
+        
