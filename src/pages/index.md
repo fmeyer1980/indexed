@@ -1,7 +1,6 @@
 ---
 title: Forside
 templateKey: 'PageIndex'
-haloo: sdsdsd
 path: /
 hero:
   heading_1: Digitale løsninger der
@@ -47,3 +46,6 @@ skills:
       to fall in love with in our shop.
       
 ---
+
+## hej
+sdhasdihsa sadas asd sad
