@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   repo: master
+  repo: fmeyer1980/indexed
 
 media_folder: "static/uploads"
 public_folder: uploads
