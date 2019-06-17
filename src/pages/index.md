@@ -3,7 +3,7 @@ title: Forside
 path: /
 templateKey: page-index
 hero:
-  heading_1: Digitale løsninger der
+  heading_1: Digitale løsninger dere
   heading_2: skaber resultater
   image: ../assets/images/hero-img.png
   text: >-
