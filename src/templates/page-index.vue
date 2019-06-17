@@ -2,7 +2,7 @@
   <Layout>
     <Hero :hero="$page.pages" />
     <AboutHome />
-    <Skills :skil="$page.pages.skills"/>
+    <!-- <Skills :skil="$page.pages.skills.skill"/> -->
   </Layout>
 </template>
 
@@ -32,9 +32,9 @@ query PageHome {
       heading_2
       text
       image
-      logos{
-        image
-      }
+    }
+    logos{
+      image
     }
     skills {
       skill{
