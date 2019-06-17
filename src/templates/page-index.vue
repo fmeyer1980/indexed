@@ -37,12 +37,14 @@ query PageHome {
       }
     }
     skills {
-      image
-      icon
-      text
-      heading
-      direction
-      bgcolor
+      skill{
+        image
+        icon
+        text
+        heading
+        direction
+        bgcolor
+      }
     }
   }
 }
