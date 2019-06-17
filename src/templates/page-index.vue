@@ -36,7 +36,7 @@ query PageHome {
         image
       }
     }
-    skills {
+    intro {
       skill{
         image
         icon

@@ -12,7 +12,7 @@ hero:
       - image: ../assets/images/stripe-logo-indexed.png
       - image: ../assets/images/wordpress-logo-indexed.png
       - image: ../assets/images/economic-logo-indexed.png
-skills:
+intro:
   skill:
     image: ../assets/images/adult-code-coder-340152.jpg
     icon: ../assets/images/economic-logo-indexed.png
