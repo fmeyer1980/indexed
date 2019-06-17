@@ -1,5 +1,6 @@
 ---
 title: Forside
+path: /
 templateKey: page-index
 hero:
   heading_1: Digitale løsninger der

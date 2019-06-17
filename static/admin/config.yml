@@ -18,6 +18,7 @@ collections:
       file: "src/pages/index.md"
       fields:
         - {label: Title, name: title, widget: string}
+        - {label: Path, name: path, widget: widget: "hidden", default: "/"}
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page-index"}
         - {label: Hero, name: hero, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}, {label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}]}
         - {lable: Logos, name: logos, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}]}
@@ -31,20 +32,20 @@ collections:
             {label: Bgcolor, name: bgcolor, widget: string}
             ]}
             ]}
-    - file: "src/pages/about/index.md"
-      label: "About"
-      name: "about"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
-        - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Ydelser"
-      name: "ydelser"
-      file: "src/pages/ydelser/index.md"
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
-        - {label: "Body", name: "body", widget: "markdown"}
+    # - file: "src/pages/about/index.md"
+    #   label: "About"
+    #   name: "about"
+    #   fields:
+    #     - {label: Title, name: title, widget: string}
+    #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
+    #     - {label: "Body", name: "body", widget: "markdown"}
+    # - label: "Ydelser"
+    #   name: "ydelser"
+    #   file: "src/pages/ydelser/index.md"
+    #   fields:
+    #     - {label: Title, name: title, widget: string}
+    #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default"}
+    #     - {label: "Body", name: "body", widget: "markdown"}
 - label: "Ydelser Undersider"
   name: "ydelserundersider"
   folder: "src/pages/ydelser"
