@@ -20,14 +20,7 @@ collections:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "page-index"}
         - {label: Hero, name: hero, widget: object, fields: [{label: Heading 1, name: heading_1, widget: string}, {label: Heading 2, name: heading_2, widget: string}, {label: Text, name: text, widget: string}, {label: Image, name: image, widget: image}]}
         - {lable: Logos, name: logos, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}, {label: Image, name: image, widget: image}]}
-        - {lable: Skills, name: skills, widget: object, fields: [
-          {label: Image, name: image, widget: image},
-          {label: Icon, name: icon, widget: image},
-          {label: Heading, name: heading, widget: string},
-          {label: Direction, name: direction, widget: string},
-          {label: Bgcolor, name: bgcolor, widget: string},
-          {label: Text, name: text, widget: "markdown"}
-          ]}
+        - {lable: Skills, name: skills, widget: object, fields: [{label: Text, name: text, widget: "markdown"}]}
     - file: "src/pages/about/index.md"
       label: "About"
       name: "about"
