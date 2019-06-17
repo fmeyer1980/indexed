@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: master
+  branch: master
   repo: fmeyer1980/indexed
 
 media_folder: "static/uploads"
