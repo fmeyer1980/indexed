@@ -5,7 +5,7 @@ templateKey: page-index
 hero:
   heading_1: Digitale løsninger dere fgdf
   heading_2: skaber resultater
-  image: ../assets/images/hero-img.png
+  image: /uploads/woocommerce-logo-indexed.png
   text: >-
     Webbureau Indexed hjælper med digitialisering af din virksomhed.
     <strong>Opdater eller byg ny hjemmeside eller webapp</strong> som kan
