@@ -34,8 +34,8 @@ query PageHome {
       image
     }
     logos{
-      image
-    }
+        image
+      }
     skills {
       skill{
         image

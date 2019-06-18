@@ -22,8 +22,8 @@
         </div>
         <div class="hero__bottom">
             <div class="container">
-                <div class="icon" v-for="logo in $page.pages.logos" :key="logo">
-                    <g-image :src="logo.image"></g-image>
+                <div class="icon" v-for="logo in hero.logos" :key="logo">
+                    <g-image :src="logo.image" />
                 </div>
             </div>
         </div>

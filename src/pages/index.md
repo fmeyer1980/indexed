@@ -11,7 +11,10 @@ hero:
     <strong>Opdater eller byg ny hjemmeside eller webapp</strong> som kan
     automatisere dine processer.
 logos:
-  image: /uploads/produktionsbillede2-forside.jpg
+  - image: /uploads/produktionsbillede2-forside.jpg
+  - image: /uploads/produktionsbillede2-forside.jpg
+  - image: /uploads/produktionsbillede2-forside.jpg
+  - image: /uploads/produktionsbillede2-forside.jpg
 skills:
   skill:
     - bgcolor: '#333'
