@@ -1,6 +1,6 @@
 <template>
   <section class="skills">
-      <div v-for="skill in $page.pages.skills" :key="skill" class="skills-box" :class="[skill.direction, skill.bgcolor]">
+      <div v-for="skill in $page.pages.skills.skill" :key="skill" class="skills-box" :class="[skill.direction, skill.bgcolor]">
         <div class="skills-box__content" >
             <g-image :src="skill.icon"></g-image>
             <h2 class="heading" v-html="skill.heading" />

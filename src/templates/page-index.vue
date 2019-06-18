@@ -2,7 +2,7 @@
   <Layout>
     <Hero :hero="$page.pages" />
     <AboutHome />
-    <Skills :skil="$page.pages.skills.skill"/>
+    <Skills :skil="$page.pages"/>
   </Layout>
 </template>
 
