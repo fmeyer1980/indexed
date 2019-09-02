@@ -3,6 +3,10 @@
     <Hero :hero="$page.pages" />
     <AboutHome />
     <Skills :skil="$page.pages"/>
+    <img 
+  src="adult-code-coder-340152.jpg?nf_resize=fit&w=1000"
+  alt="Screenshots of CSS-Tricks and CodePen homepages"
+/>
   </Layout>
 </template>
 
