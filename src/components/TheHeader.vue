@@ -15,6 +15,8 @@
                 
               </g-link>
               </li>
+              <li><g-link to="/src/pages/ydelser/fest">fest</g-link></li>
+              <li><g-link to="/src/pages/ydelser/ydelser-gfdgfdg">festtttt</g-link></li>
             <li>
               <g-link to="/ydelser">
                 <span class="text" data-hover="Ydelser">Ydelser</span>
