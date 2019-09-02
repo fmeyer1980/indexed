@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Great coffee with a conscienc
 hero:
     - image: /img/coffee.png
     title: Why Kaldi
